@@ -4,6 +4,8 @@ import datetime
 import random
 from selenium.webdriver.common.by import By
 
+
+
 # Start of countdown
 start_time = time.time()
 
@@ -20,7 +22,7 @@ def open_site_firefox(site):
     time.sleep(random_delay())
     browser.find_element(By.ID, "menu-item-565").click()
     time.sleep(random_delay())
-    browser.find_element(By.ID, "yandex_rtb_R-A-412676-1")
+    browser.find_element(By.ID, "yandex_rtb_R-A-412676-1").location_once_scrolled_into_view
     time.sleep(random_delay())
     browser.quit()
 
@@ -32,6 +34,8 @@ def open_site_chrome(site):
     print(f'I found this on {site} the site in the Google Chrome browser')
     time.sleep(random_delay())
     browser.find_element(By.ID, "menu-item-565").click()
+    time.sleep(random_delay())
+    browser.find_element(By.ID, "yandex_rtb_R-A-412676-1").location_once_scrolled_into_view
     time.sleep(random_delay())
     browser.quit()
 
