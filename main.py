@@ -36,7 +36,6 @@ def open_site_chrome(site):
     browser.find_element(By.ID, "menu-item-565").click()
     time.sleep(random_delay())
     browser.find_element(By.ID, "yandex_rtb_R-A-412676-1").location_once_scrolled_into_view
-    print(f'I found this on {site} the')
     time.sleep(random_delay())
     browser.quit()
 
