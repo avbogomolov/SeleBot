@@ -16,6 +16,6 @@ links = soup.find_all('a', href=True)
 
 # Рандомно выбираем одну из ссылок
 random_link = random.choice(links)
-
+print(random_link['href'])
 # Выводим выбранную ссылку
 print(random_link['href'])
