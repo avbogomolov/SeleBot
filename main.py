@@ -13,7 +13,7 @@ start_time = time.time()
 
 url = 'https://ironchampion.ru'
 
-# def generation random link of site
+# Def generation random link of site
 def random_link(url_site):
     response = requests.get(url_site)
     # Парсим HTML содержимое
