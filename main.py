@@ -10,7 +10,6 @@ from selenium.webdriver.common.keys import Keys
 # Start of countdown
 start_time = time.time()
 
-
 url = 'https://ironchampion.ru'
 
 # Def generation random link of site
@@ -55,59 +54,7 @@ def open_site_firefox(a):
     except:
         print(f'Firefox dont finded  {element_2}')
     try:
-        browser.find_element(By.ID, yandex_rtb).click()
-        print(f'Firefox ---- {yandex_rtb} ')
-        for i in range(3000):
-            browser.find_element(By.TAG_NAME, 'body').send_keys(Keys.PAGE_UP, Keys.DOWN, Keys.LEFT)
-        time.sleep(random_delay())
-    except:
-        print(f'Firefox dont finded  {yandex_rtb}')
-####################################################
-    print('second lap')
-    try:
-        browser.find_element(By.ID, element_1).click()
-        print(f'Firefox ---- {element_1} ')
-        for i in range(3000):
-            browser.find_element(By.TAG_NAME, 'body').send_keys(Keys.PAGE_UP, Keys.DOWN, Keys.LEFT)
-        time.sleep(random_delay())
-    except:
-        print(f'Firefox dont finded  {element_1}')
-    try:
-        browser.find_element(By.ID, element_2).click()
-        print(f'Firefox ---- {element_2} ')
-        for i in range(3000):
-            browser.find_element(By.TAG_NAME, 'body').send_keys(Keys.PAGE_UP, Keys.DOWN, Keys.LEFT)
-        time.sleep(random_delay())
-    except:
-        print(f'Firefox dont finded  {element_2}')
-    try:
-        browser.find_element(By.ID, yandex_rtb).click()
-        print(f'Firefox ---- {yandex_rtb} ')
-        for i in range(3000):
-            browser.find_element(By.TAG_NAME, 'body').send_keys(Keys.PAGE_UP, Keys.DOWN, Keys.LEFT)
-        time.sleep(random_delay())
-    except:
-        print(f'Firefox dont finded  {yandex_rtb}')
-##########################################################################
-    print("third lap")
-    try:
-        browser.find_element(By.ID, element_1).click()
-        print(f'Firefox ---- {element_1} ')
-        for i in range(3000):
-            browser.find_element(By.TAG_NAME, 'body').send_keys(Keys.PAGE_UP, Keys.DOWN, Keys.LEFT)
-        time.sleep(random_delay())
-    except:
-        print(f'Firefox dont finded  {element_1}')
-    try:
-        browser.find_element(By.ID, element_2).click()
-        print(f'Firefox ---- {element_2} ')
-        for i in range(3000):
-            browser.find_element(By.TAG_NAME, 'body').send_keys(Keys.PAGE_UP, Keys.DOWN, Keys.LEFT)
-        time.sleep(random_delay())
-    except:
-        print(f'Firefox dont finded  {element_2}')
-    try:
-        browser.find_element(By.ID, yandex_rtb).click()
+        browser.find_element(By.ID, yandex_rtb)
         print(f'Firefox ---- {yandex_rtb} ')
         for i in range(3000):
             browser.find_element(By.TAG_NAME, 'body').send_keys(Keys.PAGE_UP, Keys.DOWN, Keys.LEFT)
@@ -135,95 +82,11 @@ def open_site_chrome(site):
         browser.find_element(By.TAG_NAME, 'body').send_keys(Keys.PAGE_UP, Keys.UP, Keys.LEFT)
     print(f'I found this on {yandex_rtb} the site in the Firefox browser')
     time.sleep(random_delay())
-    # sdfsdfdsfsdfsdfdsf
-    print(f'two ring')
-    browser.find_element(By.ID, element_1).click()
-    print(f'I found this on {element_1} the site in the Firefox browser')
-    for i in range(3000):
-        browser.find_element(By.TAG_NAME, 'body').send_keys(Keys.PAGE_UP, Keys.DOWN, Keys.LEFT)
-    time.sleep(random_delay())
-    browser.find_element(By.ID, element_2).click()
-    for i in range(3000):
-        browser.find_element(By.TAG_NAME, 'body').send_keys(Keys.PAGE_DOWN, Keys.UP, Keys.LEFT)
-    print(f'I found this on {element_2} the site in the Firefox browser')
-    time.sleep(random_delay())
-    browser.find_element(By.ID, yandex_rtb).location_once_scrolled_into_view
-    for i in range(3000):
-        browser.find_element(By.TAG_NAME, 'body').send_keys(Keys.PAGE_UP, Keys.UP, Keys.LEFT)
-    print(f'I found this on {yandex_rtb} the site in the Firefox browser')
-    time.sleep(random_delay())
-    ########################################################################################################
-    print('second lap')
-    browser.find_element(By.ID, element_1).click()
-    print(f'I found this on {element_1} the site in the Firefox browser')
-    for i in range(3000):
-        browser.find_element(By.TAG_NAME, 'body').send_keys(Keys.PAGE_UP, Keys.DOWN, Keys.LEFT)
-    time.sleep(random_delay())
-    browser.find_element(By.ID, element_2).click()
-    for i in range(3000):
-        browser.find_element(By.TAG_NAME, 'body').send_keys(Keys.PAGE_DOWN, Keys.UP, Keys.LEFT)
-    print(f'I found this on {element_2} the site in the Firefox browser')
-    time.sleep(random_delay())
-    browser.find_element(By.ID, yandex_rtb).location_once_scrolled_into_view
-    for i in range(3000):
-        browser.find_element(By.TAG_NAME, 'body').send_keys(Keys.PAGE_UP, Keys.UP, Keys.LEFT)
-    print(f'I found this on {yandex_rtb} the site in the Firefox browser')
-    time.sleep(random_delay())
-    # sdfsdfdsfsdfsdfdsf
-    print(f'two ring')
-    browser.find_element(By.ID, element_1).click()
-    print(f'I found this on {element_1} the site in the Firefox browser')
-    for i in range(3000):
-        browser.find_element(By.TAG_NAME, 'body').send_keys(Keys.PAGE_UP, Keys.DOWN, Keys.LEFT)
-    time.sleep(random_delay())
-    browser.find_element(By.ID, element_2).click()
-    for i in range(3000):
-        browser.find_element(By.TAG_NAME, 'body').send_keys(Keys.PAGE_DOWN, Keys.UP, Keys.LEFT)
-    print(f'I found this on {element_2} the site in the Firefox browser')
-    time.sleep(random_delay())
-    browser.find_element(By.ID, yandex_rtb).location_once_scrolled_into_view
-    for i in range(3000):
-        browser.find_element(By.TAG_NAME, 'body').send_keys(Keys.PAGE_UP, Keys.UP, Keys.LEFT)
-    print(f'I found this on {yandex_rtb} the site in the Firefox browser')
-    time.sleep(random_delay())
-    ########################################################################################################
-    print(f'third lap')
-    browser.find_element(By.ID, element_1).click()
-    print(f'I found this on {element_1} the site in the Firefox browser')
-    for i in range(3000):
-        browser.find_element(By.TAG_NAME, 'body').send_keys(Keys.PAGE_UP, Keys.DOWN, Keys.LEFT)
-    time.sleep(random_delay())
-    browser.find_element(By.ID, element_2).click()
-    for i in range(3000):
-        browser.find_element(By.TAG_NAME, 'body').send_keys(Keys.PAGE_DOWN, Keys.UP, Keys.LEFT)
-    print(f'I found this on {element_2} the site in the Firefox browser')
-    time.sleep(random_delay())
-    browser.find_element(By.ID, yandex_rtb).location_once_scrolled_into_view
-    for i in range(3000):
-        browser.find_element(By.TAG_NAME, 'body').send_keys(Keys.PAGE_UP, Keys.UP, Keys.LEFT)
-    print(f'I found this on {yandex_rtb} the site in the Firefox browser')
-    time.sleep(random_delay())
-    # sdfsdfdsfsdfsdfdsf
-    print(f'two ring')
-    browser.find_element(By.ID, element_1).click()
-    print(f'I found this on {element_1} the site in the Firefox browser')
-    for i in range(3000):
-        browser.find_element(By.TAG_NAME, 'body').send_keys(Keys.PAGE_UP, Keys.DOWN, Keys.LEFT)
-    time.sleep(random_delay())
-    browser.find_element(By.ID, element_2).click()
-    for i in range(3000):
-        browser.find_element(By.TAG_NAME, 'body').send_keys(Keys.PAGE_DOWN, Keys.UP, Keys.LEFT)
-    print(f'I found this on {element_2} the site in the Firefox browser')
-    time.sleep(random_delay())
-    browser.find_element(By.ID, yandex_rtb).location_once_scrolled_into_view
-    for i in range(3000):
-        browser.find_element(By.TAG_NAME, 'body').send_keys(Keys.PAGE_UP, Keys.UP, Keys.LEFT)
-    print(f'I found this on {yandex_rtb} the site in the Firefox browser')
-    time.sleep(random_delay())
     browser.quit()
 
 
 open_site_firefox(random_link(url))
+open_site_chrome(random_link(url))
 
 
 
