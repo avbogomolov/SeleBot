@@ -64,24 +64,33 @@ def open_site_firefox(a):
     browser.quit()
 
 
-def open_site_chrome(site):
+def open_site_chrome(a):
     browser = webdriver.Chrome()
-    browser.get(site)
-    browser.find_element(By.ID, element_1).click()
-    print(f'I found this on {element_1} the site in the Firefox browser')
-    for i in range(3000):
-        browser.find_element(By.TAG_NAME, 'body').send_keys(Keys.PAGE_UP, Keys.DOWN, Keys.LEFT)
-    time.sleep(random_delay())
-    browser.find_element(By.ID, element_2).click()
-    for i in range(3000):
-        browser.find_element(By.TAG_NAME, 'body').send_keys(Keys.PAGE_DOWN, Keys.UP, Keys.LEFT)
-    print(f'I found this on {element_2} the site in the Firefox browser')
-    time.sleep(random_delay())
-    browser.find_element(By.ID, yandex_rtb).location_once_scrolled_into_view
-    for i in range(3000):
-        browser.find_element(By.TAG_NAME, 'body').send_keys(Keys.PAGE_UP, Keys.UP, Keys.LEFT)
-    print(f'I found this on {yandex_rtb} the site in the Firefox browser')
-    time.sleep(random_delay())
+    browser.get(a)
+    try:
+        browser.find_element(By.ID, element_1).click()
+        print(f'Chrome ---- {element_1} ')
+        for i in range(3000):
+            browser.find_element(By.TAG_NAME, 'body').send_keys(Keys.PAGE_UP, Keys.DOWN, Keys.LEFT)
+        time.sleep(random_delay())
+    except:
+        print(f'Chrome dont finded  {element_1}')
+    try:
+        browser.find_element(By.ID, element_2).click()
+        print(f'Chrome ---- {element_2} ')
+        for i in range(3000):
+            browser.find_element(By.TAG_NAME, 'body').send_keys(Keys.PAGE_UP, Keys.DOWN, Keys.LEFT)
+        time.sleep(random_delay())
+    except:
+        print(f'Chrome dont finded  {element_2}')
+    try:
+        browser.find_element(By.ID, yandex_rtb)
+        print(f'Chrome ---- {yandex_rtb} ')
+        for i in range(3000):
+            browser.find_element(By.TAG_NAME, 'body').send_keys(Keys.PAGE_UP, Keys.DOWN, Keys.LEFT)
+        time.sleep(random_delay())
+    except:
+        print(f'Chrome dont finded  {yandex_rtb}')
     browser.quit()
 
 
